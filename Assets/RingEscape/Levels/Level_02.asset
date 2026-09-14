@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cb113da8ef4e42f383e33982a5aa18b, type: 3}
+  m_Name: Level_02
+  m_EditorClassIdentifier: 
+  levelName: Level 02
+  ringCount: 2
+  firstRingRadius: 2
+  concentricSpacing: 1.5
+  rings:
+  - rotationSpeed: 15
+    clockwise: 0
+    gaps:
+    - centerDegrees: 0
+      widthDegrees: 45
+    - centerDegrees: 180
+      widthDegrees: 45
+  - rotationSpeed: 17
+    clockwise: 1
+    gaps:
+    - centerDegrees: 90
+      widthDegrees: 35
+    - centerDegrees: 150
+      widthDegrees: 35
+    - centerDegrees: 210
+      widthDegrees: 35
+    - centerDegrees: 270
+      widthDegrees: 35

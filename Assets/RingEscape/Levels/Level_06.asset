@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cb113da8ef4e42f383e33982a5aa18b, type: 3}
+  m_Name: Level_06
+  m_EditorClassIdentifier: 
+  levelName: Level 01 - First Escape
+  ringCount: 2
+  firstRingRadius: 4
+  concentricSpacing: 2
+  rings:
+  - rotationSpeed: 50
+    clockwise: 1
+    gaps:
+    - centerDegrees: 15
+      widthDegrees: 15
+    - centerDegrees: 90
+      widthDegrees: 15
+    - centerDegrees: 150
+      widthDegrees: 15
+    - centerDegrees: 225
+      widthDegrees: 15
+    - centerDegrees: 300
+      widthDegrees: 15
+    - centerDegrees: 330
+      widthDegrees: 15
+  - rotationSpeed: 100
+    clockwise: 0
+    gaps:
+    - centerDegrees: 270
+      widthDegrees: 30
