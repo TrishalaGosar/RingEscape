@@ -6,6 +6,7 @@ public static class RingEscapeWebGLBuilder
 {
     private const string OutputPath = "RingEscape";
 
+    [MenuItem("RingEscape/Build WebGL")]
     public static void Build()
     {
         Directory.CreateDirectory(OutputPath);
