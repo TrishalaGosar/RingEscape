@@ -4,7 +4,7 @@ using UnityEditor.Build.Reporting;
 
 public static class RingEscapeWebGLBuilder
 {
-    private const string OutputPath = "Builds/WebGL";
+    private const string OutputPath = "RingEscape";
 
     public static void Build()
     {
