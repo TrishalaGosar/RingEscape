@@ -24,6 +24,18 @@ public class RotatingRing : MonoBehaviour
         BuildRing();
     }
 
+    public void Configure(float configuredRadius, float configuredSpeed, bool configuredClockwise, List<RingGap> configuredGaps, Color configuredColor)
+    {
+        radius = configuredRadius;
+        rotationSpeed = configuredSpeed;
+        clockwise = configuredClockwise;
+        ringColor = configuredColor;
+        gaps.Clear();
+        if (configuredGaps != null)
+            gaps.AddRange(configuredGaps);
+        BuildRing();
+    }
+
     private void Update()
     {
         float direction = clockwise ? -1f : 1f;
