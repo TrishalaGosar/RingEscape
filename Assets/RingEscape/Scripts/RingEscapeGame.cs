@@ -21,7 +21,6 @@ public class RingEscapeGame : MonoBehaviour
     private void Awake()
     {
         ResolveLevelNumber();
-        ApplyLevelData();
         EnsureNavigationButtons();
         if (restartButton != null)
             restartButton.onClick.AddListener(Restart);
