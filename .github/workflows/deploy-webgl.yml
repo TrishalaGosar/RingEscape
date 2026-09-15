@@ -23,6 +23,25 @@ jobs:
         uses: actions/configure-pages@v5
         with:
           enablement: true
+      - name: Prepare GitHub Pages-compatible WebGL files
+        run: |
+          python3 -m pip install --user brotli
+          python3 - <<'PY'
+          from pathlib import Path
+          import brotli
+
+          build = Path("RingEscape/Build")
+          for compressed in build.glob("*.br"):
+              output = compressed.with_suffix("")
+              output.write_bytes(brotli.decompress(compressed.read_bytes()))
+
+          index = Path("RingEscape/index.html")
+          html = index.read_text()
+          html = html.replace(".data.br", ".data")
+          html = html.replace(".framework.js.br", ".framework.js")
+          html = html.replace(".wasm.br", ".wasm")
+          index.write_text(html)
+          PY
       - name: Upload WebGL site
         uses: actions/upload-pages-artifact@v3
         with:
